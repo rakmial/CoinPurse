@@ -10,5 +10,8 @@ describe(CoinPurse) do
   end
   it('provides method .change_out(change_in), which accurately returns minimum combination of coins for change_in') do
     expect(CoinPurse.new(1).change_out).to(eq("0 quarters\n0 dimes\n0 nickels\n1 pennies\n"))
+    expect(CoinPurse.new(57).change_out).to(eq("2 quarters\n0 dimes\n1 nickels\n2 pennies\n"))
+    expect(CoinPurse.new(41).change_out).to(eq("1 quarters\n1 dimes\n1 nickels\n1 pennies\n"))
+
   end
 end
