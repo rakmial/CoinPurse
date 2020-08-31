@@ -8,7 +8,7 @@ Create a script that lets a user enter an amount of cents and shows the smallest
 _CoinPurse.rb_
 _CoinPurse\_spec.rb_
 
-* Class CoinPurse initializes with integer input change_in and exposes accessor attribute for :change_in.
+* Class CoinPurse initializes with integer input change_in and exposes reader attribute for :change_in.
 
 * Class CoinPurse provides reader attribute denominations = [25, 10, 5, 1].
 
